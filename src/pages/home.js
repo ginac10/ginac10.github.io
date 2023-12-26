@@ -29,7 +29,7 @@ export default function Home() {
     marginLeft: "35%",
   };
   const mobileImgStyle = {
-    width: "60%", // Image width set to 100% of its container
+    width: "55%", // Image width set to 100% of its container
     height: "auto", // Automatically adjust the image height
     //marginLeft: "35%",
     alignItems: "center",
@@ -80,45 +80,46 @@ export default function Home() {
           </p>
           <animated.div onMouseEnter={trigger} style={style}>
             <img
-              src="https://cdn.glitch.global/1f0b717f-f733-47c8-a274-948fd1ba542f/mobilepfp.jpg?v=1703196787996"
-              alt="pfp" 
+              src= "https://cdn.glitch.global/1f0b717f-f733-47c8-a274-948fd1ba542f/mobilepfp.jpg?v=1703196787996"// "assets/mobilepfp.png" 
+              alt="mobile-pfp" 
               className="mobile_illustration"
               style={mobileImgStyle}
             />
           </animated.div>
         </>
       ) : (
+        // On desktop
         <>
-                      <div style={containerStyle}>
-                          <div style={leftColumnStyle}>
-                              <animated.div onMouseEnter={trigger} style={style}>
-                                  <img
-                                      id="pfp"
-                                      src="https://cdn.glitch.global/1f0b717f-f733-47c8-a274-948fd1ba542f/pfp.png?v=1703163370419"
-                                      alt="pfp"
-                                      className="illustration"
-                                      style={imgStyle} />
-                              </animated.div>
-                          </div>
-                          <div style={rightColumnStyle}>
-                              <div style={textContainerStyle}>
-                                  {" "}
-                                  <h1 className="title">*｡ hi, i'm gina! ✧*｡</h1>
-                                  <code>*｡٩(ˊωˋ*)و✧*｡</code>
-                                  <p>
-                                      I study CS + Data Science at Berkeley.{" "}
-                                      <p>
-                                          Currently, I'm doing AI research at BAIR & leading at Cal
-                                          Hacks. I'm interning SWE @ Microsoft this summer.
-                                      </p>
-                                      <p>
-                                          Previously, I won the largest hackathon in history & launched
-                                          a healthcare platform used by 170+ hospitals.
-                                      </p>
-                                  </p>
-                              </div>
-                          </div>
-                      </div></>
+            <div style={containerStyle}>
+                <div style={leftColumnStyle}>
+                    <animated.div onMouseEnter={trigger} style={style}>
+                        <img
+                            src="https://cdn.glitch.global/1f0b717f-f733-47c8-a274-948fd1ba542f/pfp.png?v=1703163370419"//"/assets/pfp.png"
+                            alt="pfp"
+                            className="illustration"
+                            style={imgStyle} />
+                    </animated.div>
+                </div>
+                <div style={rightColumnStyle}>
+                    <div style={textContainerStyle}>
+                        {" "}
+                        <h1 className="title">*｡ hi, i'm gina! ✧*｡</h1>
+                        <code>*｡٩(ˊωˋ*)و✧*｡</code>
+                        <p>
+                            I study CS + Data Science at Berkeley.{" "}
+                            <p>
+                                Currently, I'm doing AI research at BAIR & leading at Cal
+                                Hacks. I'm interning SWE @ Microsoft this summer.
+                            </p>
+                            <p>
+                                Previously, I won the largest hackathon in history & launched
+                                a healthcare platform used by 170+ hospitals.
+                            </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </>
       )}
     </div>
   );
