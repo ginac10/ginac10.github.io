@@ -1,25 +1,59 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useEffect } from "react";
+import { Router, Link } from "wouter";
 
-function App() {
+/**
+* This code defines the react app
+*
+* Imports the router functionality to provide page navigation
+* Defines the Home function outlining the content on each page
+* Content specific to each page (Home and About) is defined in their components in /pages
+* Each page content is presented inside the overall structure defined here
+* The router attaches the page components to their paths
+*/
+
+// Import and apply CSS stylesheet
+import "./styles/styles.css";
+
+// Where all of our pages come from
+import PageRouter from "./components/router.js";
+
+// The component that adds our Meta tags to the page
+import Seo from './components/seo.js';
+
+// Home function that is reflected across the site
+export default function Home() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
+    <Router>
+      <Seo />
+      <main role="main" className="wrapper">
+        <div className="content">
+          {/* Router specifies which component to insert here as the main content */}
+          <PageRouter />
+        </div>
+      </main>
+      
+      {/* Footer links to Home and About, Link elements matched in router.jsx */}
+      <footer className="footer">
+        <div className="links">
+          <Link href="/">home</Link>
+          <span className="divider">|</span>
+          <Link href="/work">work</Link>
+        </div>
+
         <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+          className="btn--remix"
+          target="_top"
+          href="https://www.linkedin.com/in/ginac10/"
         >
-          Learn React
+          <img src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140" alt="" />
+          linkedin
         </a>
-      </header>
-    </div>
+      </footer>
+    </Router>
   );
 }
 
-export default App;
+/* Important: 
+package-lock.json, added line 21 (devdependencies)
+package.json, added line 44 (devdependencies)
+ */
