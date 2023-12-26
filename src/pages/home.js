@@ -66,26 +66,25 @@ export default function Home() {
         // Content for mobile
         <>
           <h1 className="title">hi, i'm gina! ♡</h1>
-          <code>*｡٩(ˊωˋ*)و✧*｡</code>
           <p>
             I study CS + Data Science at Berkeley.{" "}
             <p>
-              Currently, I'm doing AI research at BAIR & leading at Cal Hacks.
-              I'm interning SWE @ Microsoft this summer.
+                Currently, I'm doing AI research at BAIR & interning SWE @ Microsoft this summer.
             </p>
             <p>
-              Previously, I won the largest hackathon in history & launched a
-              healthcare platform used by 170+ hospitals.
+                Previously, I won the largest hackathon in history & launched
+                a healthcare platform used by 170+ hospitals. Reach out at <b style={{color: 'rgb(23,89,142)'}}>ginac at berkeley dot edu</b>! :)
             </p>
-          </p>
+            </p>
           <animated.div onMouseEnter={trigger} style={style}>
             <img
-              src= "https://cdn.glitch.global/1f0b717f-f733-47c8-a274-948fd1ba542f/mobilepfp.jpg?v=1703196787996"// "assets/mobilepfp.png" 
+              src="https://cdn.glitch.global/1f0b717f-f733-47c8-a274-948fd1ba542f/mobilepfp.jpg?v=1703196787996"// "assets/mobilepfp.png" 
               alt="mobile-pfp" 
               className="mobile_illustration"
               style={mobileImgStyle}
             />
           </animated.div>
+          <small><code>*｡٩(ˊωˋ*)و✧*｡</code></small>
         </>
       ) : (
         // On desktop
@@ -108,13 +107,13 @@ export default function Home() {
                         <p>
                             I study CS + Data Science at Berkeley.{" "}
                             <p>
-                                Currently, I'm doing AI research at BAIR & leading at Cal
-                                Hacks. I'm interning SWE @ Microsoft this summer.
+                                Currently, I'm doing AI research at BAIR & interning SWE @ Microsoft this summer.
                             </p>
                             <p>
                                 Previously, I won the largest hackathon in history & launched
-                                a healthcare platform used by 170+ hospitals.
+                                a healthcare platform used by 170+ hospitals. 
                             </p>
+                            <p style={{color: 'rgb(23,89,142)'}}>Reach out at <b>ginac at berkeley dot edu</b>!</p>
                         </p>
                     </div>
                 </div>

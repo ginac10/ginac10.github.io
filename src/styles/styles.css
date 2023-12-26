@@ -32,13 +32,13 @@ to this section's matching END comment to see page-specific styles.
   font-family: Nunito;
   padding: 0.75rem 1rem;
   font-size: 1.1rem;
-  line-height: 1rem;
+  line-height: 0rem;
   font-weight: 500;
   height: 2.75rem;
   align-items: center;
   cursor: pointer;
-  background: #FFFFFF;
-  border: 1px solid #000000;
+  /*background: #FFFFFF;
+  border: 1px solid #000000;*/
   box-sizing: border-box;
   border-radius: 4px;
   text-decoration: none;
@@ -79,6 +79,13 @@ a:not(.btn--remix):visited {
 }
 
 .footer .links {
+  align-items: center;
+  padding: 0.5rem 1.3rem 1.5rem;
+  white-space: nowrap;
+}
+
+.footer .redirect {
+  align-items: center;
   padding: 0.5rem 1rem 1.5rem;
   white-space: nowrap;
 }

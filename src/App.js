@@ -20,6 +20,8 @@ import PageRouter from "./components/router.js";
 // The component that adds our Meta tags to the page
 import Seo from './components/seo.js';
 
+import img1 from './/assets/linkedin.PNG';
+
 // Home function that is reflected across the site
 export default function Home() {
   return (
@@ -39,15 +41,15 @@ export default function Home() {
           <span className="divider">|</span>
           <Link href="/work">work</Link>
         </div>
-
+        <div className="redirect" style={{color: 'rgb(23,136,142)'}}>
+          made with <a href="https://github.com/ginac10/ginac10.github.io" target="_blank" style={{color: 'rgb(23,136,142)'}}>♥</a>
+        </div>
         <a
           className="btn--remix"
-          target="_top"
+          target="_blank"
           href="https://www.linkedin.com/in/ginac10/"
         >
-          <img src="https://cdn.glitch.com/605e2a51-d45f-4d87-a285-9410ad350515%2FLogo_Color.svg?v=1618199565140" alt="" />
-          linkedin
-        </a>
+          <img src={img1} alt="" /></a>
       </footer>
     </Router>
   );
