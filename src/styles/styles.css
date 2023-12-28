@@ -188,8 +188,12 @@ h1 {
 
 
 h2 {
-  color: #3a5a40;
+  color: #17888E;
   font-family: Nunito;
   font: Nunito;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 100%;
 }
 

@@ -14,17 +14,23 @@ export default function Work() {
         {/*<br></br>
         my portfolio can be found on my <a href="https://www.linkedin.com/in/ginac10/" target="_blank">Linkedin</a>.*/}
       </p>
-      <p><b>featured projects</b></p>
+      <h2>featured projects</h2>
       <ul>
         <li>
-          Proj 1
+        <strong>Proj 1</strong>: bla bla
         </li>
-        <li><strong>Proj 2</strong>
-        </li>
-        <li>Proj 3
+        <li><strong>Proj 2</strong>: bla bla
         </li>
       </ul>
       
+      <h2>longlist</h2>
+      <ul>
+      <li>
+        <strong>Proj 1</strong>: bla bla
+        </li>
+        <li><strong>Proj 2</strong>: bla bla
+        </li>
+      </ul>
       
     </div>
   );
