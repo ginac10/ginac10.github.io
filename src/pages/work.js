@@ -3,7 +3,6 @@ export default function Work() {
   /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
 
   return (
-    
     <div className="page">
       {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}
       <h1 className="title">work</h1>
@@ -17,9 +16,15 @@ export default function Work() {
       <p><b>featured projects</b></p>
       <ul>
         <li>
+<<<<<<< HEAD
           Proj 1
         </li>
         <li><strong>Proj 2</strong>
+=======
+        <strong>Notes for Support</strong>: bla bla
+        </li>
+        <li><strong>Lingoti</strong>: bla bla
+>>>>>>> 64d66472c96195f75a9244b35760a5c9b6327672
         </li>
         <li>Proj 3
         </li>
@@ -27,5 +32,6 @@ export default function Work() {
       
       
     </div>
+    
   );
 }
