@@ -17,3 +17,9 @@ export default function Resume() {
     </div>
   );
 }
+
+// how to add new pg:
+// 1. add <silly>.js to pages
+// 2. add route to router.js
+//    import <Silly> from "../pages/<silly>";
+//    <Route path="/<silly>" component={<Silly>} />
