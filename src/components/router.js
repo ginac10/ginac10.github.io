@@ -2,7 +2,7 @@ import * as React from "react";
 import { Switch, Route } from "wouter";
 import Home from "../pages/home";
 import Work from "../pages/work";
-import Resume from "../pages/resume";
+import Resume from "../pages/subpages/resume";
 import GlobalHackathon from "../pages/subpages/global-hackathon";
 
 /**
