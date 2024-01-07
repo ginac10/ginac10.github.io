@@ -40,8 +40,6 @@ export default function Home() {
           <Link href="/">home</Link>
           <span className="divider">|</span>
           <Link href="/work">work</Link>
-          <span className="divider">|</span>
-          <Link href="/resume">resume</Link>
         </div>
         <div className="redirect" style={{color: 'rgb(23,136,142)'}}>
           made with <a href="https://github.com/ginac10/ginac10.github.io" target="_blank" style={{color: 'rgb(23,136,142)'}}>♥</a>

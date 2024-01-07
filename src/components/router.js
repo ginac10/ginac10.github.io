@@ -3,6 +3,7 @@ import { Switch, Route } from "wouter";
 import Home from "../pages/home";
 import Work from "../pages/work";
 import Resume from "../pages/resume";
+import GlobalHackathon from "../pages/subpages/global-hackathon";
 
 
 /**
@@ -18,5 +19,8 @@ export default () => (
       <Route path="/" component={Home} />
       <Route path="/work" component={Work} />
       <Route path="/resume" component={Resume} />
+//    <Route path="/global-hackathon" component={GlobalHackathon}/>
     </Switch>
 );
+
+// To add a page: add to pages folder, add to router.js
