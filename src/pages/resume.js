@@ -9,8 +9,8 @@ export default function Resume() {
       <h1 className="title">resume</h1>
       <p>
         Note: I've finished enough CS coursework to graduate as early as <b>Dec 2024</b> (expected), 
-        <br></br>and alternatively, as late as May 2025 if I attend all 4 years. 
-        <br></br><br></br>These resumes are here to reflect that :)
+        and alternatively, <br></br>as late as May 2025 if I attend all 4 years. 
+        These resumes are here to reflect that :)
       </p>
       
       
