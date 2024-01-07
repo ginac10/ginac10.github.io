@@ -72,11 +72,7 @@ export default function Home() {
                 Currently, I'm doing AI research at BAIR & interning SWE @ Microsoft this summer.
             </p>
             <p>
-<<<<<<< HEAD
                 Previously, I won the <a href="/global-hackathon">largest hackathon</a> in history & launched
-=======
-                Previously, I won the <a href="/global-hackathon" target="_blank">largest hackathon</a> in history & launched
->>>>>>> 79206ed7dd8f9641b9ff8fd50d9287f592c06af5
                 a healthcare platform used by 170+ hospitals. Reach out at <b style={{color: 'rgb(23,89,142)'}}>ginac at berkeley dot edu</b>! :)
             </p>
             </p>
@@ -114,11 +110,7 @@ export default function Home() {
                                 Currently, I'm doing AI research at BAIR & interning SWE @ Microsoft this summer.
                             </p>
                             <p>
-<<<<<<< HEAD
                                 Previously, I won the <a href="/global-hackathon">largest hackathon</a> in history & launched
-=======
-                                Previously, I won the <a href="/global-hackathon" target="_blank">largest hackathon</a> in history & launched
->>>>>>> 79206ed7dd8f9641b9ff8fd50d9287f592c06af5
                 a healthcare platform used by 170+ hospitals.
                             </p>
                             <p style={{color: 'rgb(23,89,142)'}}>Reach out at <b>ginac at berkeley dot edu</b>!</p>

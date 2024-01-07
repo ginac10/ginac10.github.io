@@ -16,15 +16,9 @@ export default function Work() {
       <p><b>featured projects</b></p>
       <ul>
         <li>
-<<<<<<< HEAD
-          Proj 1
-        </li>
-        <li><strong>Proj 2</strong>
-=======
         <strong>Notes for Support</strong>: bla bla
         </li>
         <li><strong>Lingoti</strong>: bla bla
->>>>>>> 64d66472c96195f75a9244b35760a5c9b6327672
         </li>
         <li>Proj 3
         </li>
