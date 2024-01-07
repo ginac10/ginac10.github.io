@@ -1,0 +1,32 @@
+{
+    "projects": 
+      [{
+        "name": "proj1",
+        "type": "x",
+        "description": "x",
+        "image": "/images/X.png",
+        "link": "https://google.com"
+      },
+      {
+        "name": "x",
+        "type": "x",
+        "description": "x",
+        "image": "/images/X.png",
+        "link": "https://google.com"
+      },
+      {
+        "name": "x",
+        "type": "x",
+        "description": "x",
+        "image": "/images/X.png",
+        "link": "https://google.com"
+      },
+      {
+        "name": "x",
+        "type": "x",
+        "description": "x",
+        "image": "/images/X.png",
+        "link": "https://google.com"
+      }]
+    
+  }
