@@ -3,53 +3,65 @@ import projects from '../work.json';
 import projects2 from '../work_archive.json';
 import Card from 'react-bootstrap/Card';
 
-function Work() {
-  const projectGallery = projects.projects.reduce((acc, project, index) => {
-    if (index % 2 === 0) {
-      const project1 = project;
-      const project2 = projects.projects[index + 1];
-
-      acc.push(
-        <tr key={index}>
-          <td>
-            <Card style={styles.card}>
-            <a href={project1.link} target="_blank" rel="noopener noreferrer">
-              <Card.Img variant="top" src={project1.image} alt={project1.name} />
-            </a>
-            <Card.Body>
-              {/*<Card.Title><a href={project1.link} target="_blank" rel="noopener noreferrer">{project1.name}</a></Card.Title>*/}              
-              <Card.Title>{project1.name}</Card.Title>
-              <Card.Text>{project1.description}</Card.Text>
-              {/*<Card.Link href={project1.link} target="_blank" rel="noopener noreferrer">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>*/}
-            </Card.Body>
-            </Card>
-          </td>
-
-          {project2 && (
-            <td>
-            <Card style={{ width: '18rem' }}>
-            <a href={project2.link} target="_blank" rel="noopener noreferrer">
-              <Card.Img variant="top" src={project2.image} alt={project2.name} />
-            </a>
-            <Card.Body>
-              <Card.Title>{project2.name}</Card.Title>
-              <Card.Text>{project2.description}</Card.Text>
-              <Card.Link href={project2.link} target="_blank" rel="noopener noreferrer">Card Link</Card.Link>
-              <Card.Link href="#">Another Link</Card.Link>
-            </Card.Body>
-            </Card>
-          </td>
-          )}
-        </tr>
-      );
-    }
-    return acc;
-  }, []);
-
+export default function Work() {
+  /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
+  {/*const projectGallery = projects.projects.map((project, index) => (
+    <tr key={index}>
+      <td>
+        <a href={project.link} target="_blank" rel="noopener noreferrer">
+          <img src={project.image} alt={project.name} style={styles.image} />
+        </a>
+      </td>
+      <td style={styles.projectInfo}>
+        <h5>{project.name}</h5>
+        <p><code>{project.type}</code>. {project.description}</p>
+      </td>
+    </tr>
+  ), []);*/}
+  const notesForSupport = (
+    <tr>
+      <td>
+        <a href="https://www.notesforsupport.org/" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/projects/nfs.webp" alt="Notes for Support" style={styles.image} />
+        </a>
+      </td>
+      <td style={styles.projectInfo}>
+        <h5>Notes for Support</h5>
+        <p>Platform that enables users to send physical letters to patients across 170+ hospitals in 40 states.</p>
+        <code><a href="https://www.notesforsupport.org/" target="_blank" rel="noopener noreferrer">
+          Website</a> / <a href="https://ginac.notion.site/Prettify-Note-Printer-062378b9efee47eba5d0ea50cf60db5e?pvs=4" target="_blank" rel="noopener noreferrer">
+          Printing App</a> / <a href="https://ginac.popsy.site/notes-for-support" target="_blank" rel="noopener noreferrer">Story</a></code>
+      </td>
+    </tr>
+  );
+  const lingoti = (
+    <tr>
+      <td>
+        <a href="https://ginac.popsy.site/lingoti" target="_blank" rel="noopener noreferrer">
+          <img src="/assets/projects/lingoti.jpg" alt="Lingoti" style={styles.image} />
+        </a>
+      </td>
+      <td style={styles.projectInfo}>
+        <h5>Lingoti</h5>
+        <p>Language-learning app that physically links words to familiar locations.</p>
+        <code><a href="https://ginac.popsy.site/lingoti" target="_blank" rel="noopener noreferrer">
+          App</a> (Flutter, Dart)</code>
+      </td>
+    </tr>
+  );
+  
+  const projectGalleryArchive = projects2.projects.map((project, index) => (
+    <tr key={index}>
+      <td style={styles.projectInfo}>
+        <li><b>{project.name}</b>, <a href={project.link} target="_blank" rel="noopener noreferrer">link
+        </a>: <code>{project.type}</code>. {project.description}.</li>
+      </td>
+    </tr>
+  ));
 
   return (
     <div className="page">
+      <br></br><br></br><br></br>
       {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}
       <h1 className="title">work</h1>
       {/* REPLACE OPENING P TAG BELOW WITH CODE FROM TODO */}
@@ -64,19 +76,24 @@ function Work() {
       {/* Table displaying imported projects */}
       <table style={styles.projectGallery}>
         <tbody>
-          {projectGallery}
+          {notesForSupport}
+          {lingoti}
         </tbody>
       </table>
-
-      {/* Adding spacing to bottom */}
       <br></br>
+      <h2>other</h2>
+      {/* Table displaying imported projects */}
+      <table style={styles.projectGallery}>
+        <tbody>
+          {projectGalleryArchive}
+        </tbody>
+      </table>
+      <br></br><br></br>
     </div>
 
     
   );
 }
-
-export default Work;
 
 const styles = {
   projectGallery: {
@@ -85,11 +102,15 @@ const styles = {
     marginTop: '15px',
   },
   image: {
-    maxWidth: '90%',
+    maxWidth: '18rem',
     height: 'auto',
+    marginRight: '2rem',
+    marginBottom: '1rem',
+    'border-radius': '10px',
   },
-  card: {
-    width: '18rem'
+  projectInfo: {
+    maxWidth: '18rem', 
+    wordWrap: 'break-word',
   },
 };
 
@@ -113,3 +134,7 @@ const styles = {
       </Card.Body>
     </Card>
 */}
+
+{/* Other projects:
+  - Bubbl: https://github.com/cs160-spring2023/prog-02-programming-practice-ginac10
+  - Course projects for CS161, 186 */}

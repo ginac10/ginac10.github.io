@@ -6,9 +6,9 @@ export default function Resume() {
     
     <div className="page">
       {/* REPLACE H1 ELEMENT BELOW WITH CODE FROM TODO */}
-      <h1 className="title">resume</h1>
-      <p>
-        I'm expecting to graduate in <b>Dec 2024</b>!
+      <h1 className="title"></h1>
+      <p>code available upon request<br></br>
+      reach out to  <code>ginac at berkeley dot edu</code> :)
       </p>
       
       

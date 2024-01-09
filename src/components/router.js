@@ -4,6 +4,7 @@ import Home from "../pages/home";
 import Work from "../pages/work";
 import Resume from "../pages/subpages/resume";
 import GlobalHackathon from "../pages/subpages/global-hackathon";
+import CodeRequest from "../pages/subpages/code-request";
 
 /**
 * The router is imported in app.jsx
@@ -18,7 +19,8 @@ export default () => (
       <Route path="/" component={Home} />
       <Route path="/work" component={Work} />
       <Route path="/resume" component={Resume} />
-//    <Route path="/global-hackathon" component={GlobalHackathon}/>
+      <Route path="/global-hackathon" component={GlobalHackathon}/>
+      <Route path="/code-request" component={CodeRequest}/>
     </Switch>
 );
 

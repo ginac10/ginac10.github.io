@@ -64,7 +64,9 @@ export default function Home() {
       {isMobile ? (
         // Content for mobile
         <>
+          <br></br><br></br>
           <h1 className="title">hi, i'm gina! ♡</h1>
+          <br></br>
           <p>
             I study CS + Data Science at Berkeley.{" "}
             <p>
@@ -84,6 +86,7 @@ export default function Home() {
             />
           </animated.div>
           <small><code>*｡٩(ˊωˋ*)و✧*｡</code></small>
+          <br></br><br></br>
         </>
       ) : (
         // On desktop
