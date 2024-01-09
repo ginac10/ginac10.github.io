@@ -20,7 +20,7 @@ import PageRouter from "./components/router.js";
 // The component that adds our Meta tags to the page
 import Seo from './components/seo.js';
 
-import img1 from './/assets/linkedin.PNG';
+import img1 from './/assets2/linkedin.PNG';
 
 // Home function that is reflected across the site
 export default function Home() {

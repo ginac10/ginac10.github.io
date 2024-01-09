@@ -1,28 +1,28 @@
 {
     "projects": [
       {
-        "name": "Notes for Support",
-        "type": "web platform, mobile app",
-        "description": "enables users to send physical letters to patients across 170+ hospitals in 40 states",
-        "image": "/assets/projects/nfs.webp",
-        "link": "https://www.notesforsupport.org/"
-      },
-      {
-        "name": "Lingoti",
-        "type": "x",
-        "description": "x",
-        "image": "/assets/projects/nfs-printer.jpg",
-        "link": "https://google.com"
-      },
-      {
-        "name": "x1",
+        "name": "zz",
         "type": "x",
         "description": "x",
         "image": "/images/X.png",
         "link": "https://google.com"
       },
       {
-        "name": "x2",
+        "name": "zz",
+        "type": "x",
+        "description": "x",
+        "image": "/images/X.png",
+        "link": "https://google.com"
+      },
+      {
+        "name": "zx",
+        "type": "x",
+        "description": "x",
+        "image": "/images/X.png",
+        "link": "https://google.com"
+      },
+      {
+        "name": "zx",
         "type": "x",
         "description": "x",
         "image": "/images/X.png",

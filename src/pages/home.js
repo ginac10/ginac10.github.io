@@ -45,7 +45,6 @@ export default function Home() {
 
   // The wiggle function defined in /hooks/wiggle.jsx returns the style effect and trigger function
   //   - We can attach this to events on elements in the page and apply the resulting style
-  
   const [style, trigger] = useWiggle({ x: 5, y: 5, scale: 1 });
 
   // Use effect hook to listen for window resize and update state
@@ -77,7 +76,7 @@ export default function Home() {
             </p>
             </p>
           <animated.div onMouseEnter={trigger} style={style}>
-            <img
+            <img // hosting images on glitch for now
               src="https://cdn.glitch.global/1f0b717f-f733-47c8-a274-948fd1ba542f/mobilepfp.jpg?v=1703196787996"// "assets/mobilepfp.png" 
               alt="mobile-pfp" 
               className="mobile_illustration"
@@ -123,3 +122,4 @@ export default function Home() {
     </div>
   );
 }
+// Note: create a const for the common text if there's more overlap

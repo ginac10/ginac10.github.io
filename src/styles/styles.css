@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);
-  /******************************************************************************
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/******************************************************************************
 START Glitch hello-app default styles
 
 The styles in this section do some minimal CSS resets, set default fonts and 
@@ -188,7 +190,7 @@ h1 {
 
 
 h2 {
-  color: #3a5a40;
+  color: #4D868C;/*3a5a40*/
   font-family: Nunito;
   font: Nunito;
 }
