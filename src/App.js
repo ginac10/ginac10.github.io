@@ -39,7 +39,7 @@ export default function Home() {
         <div className="links">
           <Link href="/">home</Link>
           <span className="divider">|</span>
-          <Link href="/work">work</Link>
+          <Link href="/resume">work</Link>
           
         </div>
         <div className="redirect" style={{color: 'rgb(23,136,142)'}}>
