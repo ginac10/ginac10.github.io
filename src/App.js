@@ -31,9 +31,6 @@ export default function Home() {
         <div className="content">
           {/* Router specifies which component to insert here as the main content */}
           <PageRouter />
-          <Link href="/resume">resume</Link>
-          <Link href="/code-request">c</Link>
-          <Link href="/global-hackathon"></Link>
         </div>
       </main>
       
