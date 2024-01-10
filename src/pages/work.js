@@ -75,8 +75,9 @@ export default function Work() {
   const projectGalleryArchive = projects2.projects.map((project, index) => (
     <tr key={index}>
       <td style={styles.projectInfo}>
-        <li><b>{project.name}</b>, <Link href={project.link} target="_blank" rel="noopener noreferrer">link
-        </Link>: <code>{project.type}</code>. {project.description}.</li>
+        {project.link === "/code-request" ? (<li><b>{project.name}</b>, <Link href={"/code-request"} target="_blank" rel="noopener noreferrer">link
+        </Link>: <code>{project.type}</code>. {project.description}.</li>) : (<li><b>{project.name}</b>, <a href={project.link} target="_blank" rel="noopener noreferrer">link
+        </a>: <code>{project.type}</code>. {project.description}.</li>)}
       </td>
     </tr>
   ));
