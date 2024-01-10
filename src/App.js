@@ -31,6 +31,9 @@ export default function Home() {
         <div className="content">
           {/* Router specifies which component to insert here as the main content */}
           <PageRouter />
+          <Link href="/resume"></Link>
+          <Link href="/code-request"></Link>
+          <Link href="/global-hackathon"></Link>
         </div>
       </main>
       
@@ -39,7 +42,7 @@ export default function Home() {
         <div className="links">
           <Link href="/">home</Link>
           <span className="divider">|</span>
-          <Link href="/resume">work</Link>
+          <Link href="/work">work</Link>
           
         </div>
         <div className="redirect" style={{color: 'rgb(23,136,142)'}}>
