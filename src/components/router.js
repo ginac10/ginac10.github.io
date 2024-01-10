@@ -2,9 +2,9 @@ import * as React from "react";
 import { Switch, Route } from "wouter";
 import Home from "../pages/home";
 import Work from "../pages/work";
-import Resume from "../pages/subpages/resume";
-import GlobalHackathon from "../pages/subpages/global-hackathon";
-import CodeRequest from "../pages/subpages/code-request";
+import Resume from "../pages/resume";
+import GlobalHackathon from "../pages/global-hackathon";
+import CodeRequest from "../pages/code-request";
 
 /**
 * The router is imported in app.jsx

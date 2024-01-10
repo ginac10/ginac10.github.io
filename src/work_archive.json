@@ -10,7 +10,7 @@
         "name": "2-Stage Pipelined CPU",
         "type": "C, Python, Assembly",
         "description": "RISC-V Processor",
-        "link": "https://google.com"
+        "link": "/code-request"
       },
       {
         "name": "Timetronic",
