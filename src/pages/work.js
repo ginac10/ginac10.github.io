@@ -158,4 +158,7 @@ const styles = {
 
 {/* Other projects:
   - Bubbl: https://github.com/cs160-spring2023/prog-02-programming-practice-ginac10
-  - Course projects for CS161, 186 */}
+  - Course projects for CS161, 186 
+  
+  To push local gh-pages changes to gh-pages branch: git push -f origin gh-pages
+*/}
