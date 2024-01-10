@@ -4,6 +4,22 @@ import projects2 from '../work_archive.json';
 import Card from 'react-bootstrap/Card';
 
 export default function Work() {
+
+  
+  // This keeps track if it's a mobile device
+  const [isMobile, setIsMobile] = React.useState(window.innerWidth <= 800);
+
+  // Use effect hook to listen for window resize and update state
+  React.useEffect(() => {
+    function handleResize() {
+      setIsMobile(window.innerWidth <= 800);
+    }
+
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup function to remove event listener
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
   /* DECLARE STYLE AND TRIGGER FOR WIGGLE EFFECT FROM TODO ON NEXT LINE */
   {/*const projectGallery = projects.projects.map((project, index) => (
     <tr key={index}>
@@ -20,11 +36,13 @@ export default function Work() {
   ), []);*/}
   const notesForSupport = (
     <tr>
+      {!isMobile && (
       <td>
         <a href="https://www.notesforsupport.org/" target="_blank" rel="noopener noreferrer">
           <img src="/assets/projects/nfs.webp" alt="Notes for Support" style={styles.image} />
         </a>
       </td>
+      )}
       <td style={styles.projectInfo}>
         <h5>Notes for Support</h5>
         <p>Platform that enables users to send physical letters to patients across 170+ hospitals in 40 states.</p>
@@ -36,12 +54,15 @@ export default function Work() {
   );
   const lingoti = (
     <tr>
+      {!isMobile && (
       <td>
         <a href="https://ginac.popsy.site/lingoti" target="_blank" rel="noopener noreferrer">
           <img src="/assets/projects/lingoti.jpg" alt="Lingoti" style={styles.image} />
         </a>
       </td>
+      )}
       <td style={styles.projectInfo}>
+      {isMobile && (<br></br>)}
         <h5>Lingoti</h5>
         <p>Language-learning app that physically links words to familiar locations.</p>
         <code><a href="https://ginac.popsy.site/lingoti" target="_blank" rel="noopener noreferrer">
@@ -137,4 +158,7 @@ const styles = {
 
 {/* Other projects:
   - Bubbl: https://github.com/cs160-spring2023/prog-02-programming-practice-ginac10
-  - Course projects for CS161, 186 */}
+  - Course projects for CS161, 186 
+  
+  To push local gh-pages changes to gh-pages branch: git push -f origin gh-pages
+*/}
