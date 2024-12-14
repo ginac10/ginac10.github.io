@@ -68,10 +68,7 @@ export default function Home() {
           <h1 className="title">hi, i'm gina! ♡</h1>
           <br></br>
           <p>
-            I study CS + Data Science at Berkeley.{" "}
-            <p>
-                Currently, I'm doing AI research at BAIR & interning SWE @ Microsoft this summer.
-            </p>
+            I'm a software engineer at Microsoft & a recent UC Berkeley grad (Dec '24!).{" "}
             <p>
                 Previously, I won the <Link href="/global-hackathon" target="_blank">largest hackathon</Link> in history & launched
                 a healthcare platform used by 170+ hospitals. Reach out at <b style={{color: 'rgb(23,89,142)'}}>ginac at berkeley dot edu</b>! :)
